@@ -1,0 +1,74 @@
+<html>
+    <head> <title>forms pattern task</title></head>
+    <body>
+        <fieldset>
+            <legend>Register here</legend>
+            <form action="./done.txt">
+                <pre>
+                    
+                <h2>I am  going to join 10K coders 	&#128682; and wanna learn subject and become developer &#128187;</h2>
+                <div style="background-color: blue;">
+                    <label for="Fname" >Enter your name:-</label>
+                    <input type="text" id ="Fname" required pattern="[A-Z]+[a-z]{1,}" placeholder ="Enter Your name">
+                </div>
+                <div style="background-color: red;">
+                    <label for="pwd" >Enter Password</label>
+                    <input type ="password"id ="pwd" required pattern="[a-zA-z!@#$%^&*()_0-9]{8,}" placeholder="Enter password">
+                </div>
+                <div style="background-color: yellow;">
+                    <label for="email" >Enter Email</label>
+                    <input type="email" id = "email" required placeholder="Enter Email" pattern ="[a-z0-9]+@[a-z]+\.[a-z]{2,}">
+                </div>
+                <div style ="background-color: violet;">
+                    <label for="food" >Choose Your Food</label>
+                    <select>
+                        <option disabled>choose here</option>
+                        <option selected>Biriyani</option>
+                        <option>tea</option>
+                        <option>shakes</option>
+                        <option disabled>Icecream</option>
+                    </select>
+                </div>
+                <div style="background-color: green;">
+                    <label for="timings">timings</label>
+                    <input list="timing" id="timings" name ="timings">
+                    <datalist id="timing">
+                        <option value ="8.30 to 10.00">8.30 to 10.00</option>
+                        <option value="10.30 to 12.00">10.30 to 12.00</option>
+                        <option value="2.30 to 4.00">2.30 to 4.00</option>
+                        <option value ="4.30 to 6.00">4.30 to 6.00</option>
+                    </datalist>
+                </div>
+                <div>
+                    <input type="file">
+                </div>
+                <div style="background-color: gray">
+                    <label for="Gender" >Gender:-</label><br>
+                    <input type="radio" name ="Gender" value ="male" required><label for="male">Male</label><br>
+                    <input type="radio" name ="Gender" value="female"><label for ="female">Female</label><br>
+                    <input type="radio" name ="Gender" value="other"><label for ="other">Other</label><br>
+                </div>
+                <div>
+                <input type ="checkbox" required>
+                I agree to the <a href"https://termly.io/resources/templates/terms-and-conditions-template/">Terms and Conditions</a>
+                </div>
+                <div style="background-color: brown;">
+                    <textarea rows="15" cols="100" readonly>
+                        
+                        Manideep
+                        1-6-173
+                        504296
+                        tS
+                        Sirpur Kaghaznagar
+                    
+                    </textarea>
+                </div>
+
+                </pre>
+                <button type="submit">SUBMIT</button>
+                </form>
+
+        </fieldset>
+    </body>
+
+</html> 

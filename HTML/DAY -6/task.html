@@ -1,0 +1,77 @@
+<html></html>
+    <head><title>Form task</title></head>
+    <body>
+        <center>
+         <form action="./submit.txt" >
+            <fieldset>
+                <legend>Register here for 10K coders</legend>
+            <pre>
+                <img src ="https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg">
+                <label >Your Name:-</label>
+                <input type="text" placeholder="Enter your name" required>
+
+                <label>Email:-</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label for="education:-" >education</label>
+                <select name ="edu" id="education" required>
+                    <option value = "" disabled selected>Choose here</option>
+                    <option value = "B.Tech">B.Tech</option>
+                    <option value = "B.Sc">B.Sc</option>
+                    <option value = "B.Com">B.Com</option>
+                    <option value = "MCA">MCA</option>
+                    <option value = "MBA">MBA</option>
+                </select>
+                
+                <label for ="po"  >Year of Passed out:-</label>
+                <select name ="po"  id = "po" required>
+                <option value=""disabled selected>choose here</option>
+                <option value = "2024">2024</option>
+                <option value = "2023">2023</option>
+                <option value = "2022">2022</option>
+                <option value = "2021">2021</option>
+                <option value = "2020">2020</option>
+                </select>
+                
+                <label for ="Location">location:-</label>
+                <select name ="loc" id="location" required>
+                    <option value ="" disabled selected></option>
+                    <option value="hyd">hyderbad</option>
+                    <option value="chen">Chennai</option>
+                    <option value="bgr">Bangalore</option>
+                    <option value="wgl">Warangal</option>
+                </select>
+
+                <label for="course" >Choose your Course:-</label>
+                <select name ="course" id = "course" required>
+                    <option value ="" disabled selected></option>
+                    <option value="FD">Frontend Developer</option>
+                    <option value="JFS">Java Full Stack</option>
+                    <option value="AWS">AWS</option>
+                    <option value="PFS">Python Full Stack</option>
+                </select>
+
+                <label for="phno" required> Phone Number</label>
+                <input type="tel" placeholder="Your Mobile Number "id ="phno">
+
+                <label for="Gender" >Gender:-</label>
+
+                <input type="radio" id="male" name ="Gender" value ="male" required><label for="male">Male</label>
+                
+
+                <input type="radio" id ="female" name ="Gender" value="female"><label for ="female">Female</label>
+                
+
+                <input type="radio" name ="Gender" value="other"><label for ="other">Other</label>
+                
+
+                <label>Do you Want to become a Developer</label>
+                <input type ="checkbox" required>
+
+                <input type="submit">
+            </pre>
+        </fieldset>
+         </form>
+         </center>
+    </body>
+</html>
