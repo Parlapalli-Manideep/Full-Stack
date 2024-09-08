@@ -1,0 +1,27 @@
+.main{
+    margin: auto;
+    }
+    .child
+    {
+        width:80%;
+        height:150px;
+        border: 2px solid red;
+        padding: 3px;
+        margin:3px;
+    }
+    .box2{
+        position:absolute;
+        /* position:relative; */
+        background-color: antiquewhite;
+        top:100px;
+    }
+    .box1{
+        background-color: aliceblue;
+    }
+    .box3
+    {
+        background-color: aquamarine;
+    }
+    .box4{
+        background-color: rgb(21, 71, 61);
+    }

@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right , rgba(165, 42, 42, 1),rgba(160, 42, 42, 0.3));
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 4%;
+}
+body{
+    background-color: rgba(173, 140, 95,0.4);
+
+}
+main{
+    margin: 1px 2px;
+}
+.all{
+    margin:auto;
+    width: 90%;
+    display: flex;
+}
+.individual
+{
+    background-color: white;
+    width:33%;
+    margin:2px;
+    /* border:3px solid red; */
+    box-sizing: border-box;
+}
+img{
+    object-fit: cover;
+    width:90%;
+    height: 65%;
+    padding:5%;   
+}
+.name{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+p{
+    text-align: center;
+}
+footer{
+    margin-top: 4%;
+}
+#ff
+{
+    background: linear-gradient(to right , rgba(165, 42, 42, 1),rgba(160, 42, 42, 0.3));
+    padding:15px;
+    text-align: center;
+}

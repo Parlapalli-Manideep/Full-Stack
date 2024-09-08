@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    width: 100%;
+    justify-content:space-evenly;
+    align-items:center;
+    gap:10px;
+    background-color: beige;
+    
+}
+.child{
+    background-color: lightblue;
+    width:280px;
+    height:200px;
+}

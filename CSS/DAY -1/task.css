@@ -1,0 +1,36 @@
+p{
+    color: white;
+}
+h2{
+    color: white;
+}
+ul li{
+    color:white;
+}
+/* .para{
+    color: black;
+} */
+span{
+    font-weight: bold;
+}
+#bb{
+    font-weight: bold;
+}
+#one{
+    background-color:olivedrab;
+}
+#two{
+    background-color: orange;
+}
+#three{
+    background-color: skyblue;
+}
+#four{
+    background-color: yellow;
+}
+#five{
+   background-color: purple; 
+}
+div{
+    text-align: center;
+}

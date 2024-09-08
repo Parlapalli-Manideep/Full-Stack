@@ -1,0 +1,39 @@
+#ex2{
+    background-color: rgb(71, 164, 152);
+    width: 400px;
+    margin:20px 20px;
+    padding:50px 50px 50px 50px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    
+}
+img{
+    width:300px;
+}
+span{
+    background-color: lightcyan;
+}
+#ex1{
+    background-color: lightskyblue;
+    /* width: 400px; */
+    /* margin:20px 20px; */
+    /* padding:50px 50px 50px 50px; */
+    /* box-sizing: border-box; */
+    display: inline;
+}
+#bl{
+    display: block;
+    background-color: aquamarine;
+}
+.box {
+    margin: 41px 0px;  /*Creates space between this element and others */
+    border: 1px solid black; /* The element's border */
+    outline: 40px dashed red; /* A line around the element that doesn't affect layout */
+  }
+  #size{
+    box-sizing: border-box;
+    padding: 10px;
+    border:10px solid blue;
+    margin:10px;
+    outline:1px solid red;
+  }

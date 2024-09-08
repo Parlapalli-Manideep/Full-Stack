@@ -1,0 +1,17 @@
+#fname{
+    background-color:lightskyblue;
+    font-size: 60px;
+}
+#mname{
+    background-color: lightcoral;
+    font-size: 55px;
+}
+#bname{
+    background-color: blanchedalmond;
+    font-size: 50px;
+}
+#name{
+    background-color: cadetblue;
+    font-size:40px;
+    font-family: 'Courier New', Courier, monospace
+}

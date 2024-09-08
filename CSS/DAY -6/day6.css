@@ -1,0 +1,21 @@
+div{
+
+    background-image: url("https://img.freepik.com/free-vector/realistic-travel-elements-background_23-2148049637.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724716800&semt=ais_hybrid");
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+    }
+    h1{
+        color: blue;
+        /* position: fixed; */
+        display:inline;
+        margin:20px 20px;
+    }
+    p{
+        display: inline;
+        float: inline-end;
+        margin-right: 20px;
+    }
+    

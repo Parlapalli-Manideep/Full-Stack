@@ -1,0 +1,50 @@
+.parent{
+    display: grid;  
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,50px);
+    gap:20px;
+}
+.child{
+    background-color: rgb(205, 185, 38);
+    color:white;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding:10px;
+
+}
+.one{
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+.two{
+    grid-column: 1/2;
+    grid-row: 5/9;
+}
+.three{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.four{
+    grid-column: 3/4;
+    grid-row: 5/7;
+}
+.five{
+    grid-column: 4/5;
+    grid-row: 5/8;
+}
+.six{
+    grid-column: 2/3;
+    grid-row: 6/9;
+}
+.seven{
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+.eight{
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
+.nine{
+    grid-column: 4/5;
+    grid-row: 8/9;
+}
