@@ -1,0 +1,80 @@
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 100%;
+}
+td{
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+}
+div{
+    width:150px;
+    height: 150px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+.one:hover{
+    animation: move1 3s linear infinite;
+}
+.two:hover{
+    animation: move2 3s linear infinite;
+}
+.three:hover{
+    animation: move3 3s linear infinite;
+}
+    @keyframes move1 {
+        0%{
+        transform:  translateX(0px) rotate(0deg);
+        }
+        25%{
+        transform:  translateX(75%) rotate(180deg);
+        }
+        50%{
+        transform:  translateX(150%) rotate(360deg);
+        }
+        75%{
+            transform: translateX(75%) rotate(180deg);
+        }
+        100%{
+        transform:  translateX(0px) rotate(0deg);
+        }
+    }
+    @keyframes move2 {
+        0%{
+        transform:  translateX(0px) rotate(0deg);
+        }
+        25%{
+        transform:  translateX(-75%) rotate(180deg);
+        }
+        50%{
+        transform:  translateX(-150%) rotate(360deg);
+        }
+        75%{
+            transform: translateX(-75%) rotate(180deg);
+        }
+        100%{
+        transform:  translateX(0px) rotate(0deg);
+        }
+    }
+    @keyframes move3 {
+        0%{
+        transform:  translateY(0px) rotate(0deg);
+        }
+        25%{
+        transform:  translateY(75%) rotate(180deg);
+        }
+        50%{
+        transform:  translateY(150%) rotate(360deg);
+        }
+        75%{
+            transform: translateY(75%) rotate(180deg);
+        }
+        100%{
+        transform:  translateY(0px) rotate(0deg);
+        }
+    }
+
