@@ -2,11 +2,11 @@ img{
     width: 100px;
     height: 100px;
     animation-name: luffy;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-delay: 1s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
-    animation-direction:alternate;
+    animation-direction:alternate-reverse;
     /* margin-left: 400px;
      margin-top: 400px; */
     /* animation-fill-mode: forwards; */
@@ -17,22 +17,22 @@ img{
         /* transition: all 0s; */
     }
     25%{
-        transform:  translateX(50px) rotate(180deg);
+        transform:  translateX(50px) rotate(90deg);
         /* transition: all 1s; */
         /* transform-origin: bottom right;  */
     }
     50%{
-        transform:  translateX(100px)  rotate(360deg);
+        transform:  translateX(100px)  rotate(180deg);
         /* transition: all 1s; */
         /* transform-origin: right bottom;  */
     }
     75%{
-        transform:  translateX(50px) rotate(180deg);
+        transform:  translateX(50px) rotate(270deg);
         /* transition: all 1s; */
         /* transform-origin: bottom right;  */
     }
     100%{
-        transform:  translateX(0px) rotate(0deg);
+        transform:  translateX(0px) rotate(360deg);
         /* transition: all 1s; */
         /* transform-origin: bottom right; */
     }
