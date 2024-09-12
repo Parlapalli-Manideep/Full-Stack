@@ -18,7 +18,11 @@ a{
     text-decoration: none;
     padding: 0px 8px;
 }
-.button:hover{
+button{
+    padding: 5px;
+    width: 125%;
+}
+button:hover{
     color:white;
     background-color: black;
 }
@@ -35,6 +39,7 @@ a{
 .buy{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .items{
     background-color: #f1f1f1 !important;
