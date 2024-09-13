@@ -44,27 +44,26 @@ button:hover{
 }
 @media (max-width:426px)
 {
+    .container{
+        display: grid;
+        background-color: darkseagreen;
+        padding:10px;
+    }
     .items{
         padding: 10%;
         margin-bottom:15px ;
     }
-    .container{
-        background-color: darkseagreen;
-        padding:10px;
-    }
 }
-@media (min-width:426px) and (max-width:768px)
+ @media (min-width:426px) and (max-width:768px)
 {
     .container{
-        padding:10px 0 0 10px;
-        display: flex;
-        flex-wrap: wrap;
+        padding:10px;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
         gap:10px;
-        justify-content: center;
         background-color: darkgrey;
     }
     .items{
-        width: 45%;
         padding: 5%;
     }
 }
@@ -77,15 +76,13 @@ button:hover{
         font-size:14px;
     }
     .container{
-        padding:10px 0 10px 0;
-        display: flex;
-        flex-wrap: wrap;
+        padding:10px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
         gap:15px;
-        justify-content: center;
         background-color: azure;
     }
     .items{
-        width: 30%;
         padding: 5%;
     }
     .name{
@@ -94,8 +91,7 @@ button:hover{
     .buy{
         font-size: 20px;
     }
-    
-}
+}  
 @media (min-width:1025px) and (max-width:1440px){
     h1{
         font-size: 36px;
@@ -107,16 +103,14 @@ button:hover{
         padding: 0 12px;
     }
     .container{
-        padding:20px 0 20px 0;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding:20px;
         gap:20px;
-        justify-content: center;
         background-color: burlywood;
     }
     .items{
-        width: 23%;
-        padding: 1%;
+        padding: 3%;
     }   
     .name{
         font-size: 28px;
@@ -125,6 +119,7 @@ button:hover{
         font-size: 22px;
     }
 }
+
 @media (min-width:1441px) and (max-width:2560px)
 {
     h1{
@@ -137,16 +132,15 @@ button:hover{
         padding: 0 18px;
     }
     .container{
-        padding:20px 0 20px 0;
-        display: flex;
-        flex-wrap: wrap;
+        padding:20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
         gap:22px;
         justify-content: center;
         background-color: lightblue;
     }
     .items{
-        width: 23%;
-        padding: 1%;
+        padding: 3%;
     }  
     .name{
         font-size: 22px;
