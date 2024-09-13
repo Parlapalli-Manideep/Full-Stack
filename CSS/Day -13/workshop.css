@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+    flex-flow: column wrap;
+    padding: 10px;
+}
+.box{
+    width: 100%;
+    padding: 10px;
+}
+img{
+    width: 100%;
+}
+.one p{
+    font-size: 21px;
+}
+.two , .three{
+    display: flex;
+
+}
+.two-1 , .three-2{
+    width:50% ;
+}
+.two-2 , .three-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+button{
+    padding: 8px 15px;
+    border: 2px solid lightblue;
+}
+.four ,.five{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+.four-2{
+    display: grid;
+    gap:15px;
+    grid-template-columns: repeat(3,1fr);
+}
+.four-1 p{
+    font-size: 18px;
+}
+.item{
+    padding: 10px;
+}
+.item img{
+    width: 75%;
+}
+.five img{
+    width:10%;
+}
+.five-1 , .five-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+a{
+    color: brown;
+    font-weight: bold;
+}
+
+
