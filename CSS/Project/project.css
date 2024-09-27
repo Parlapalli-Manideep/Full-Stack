@@ -94,9 +94,8 @@ nav a{
 .c2box1 .img{
     width: 20%;
     height: 50%;
-    padding: 15px;
     border-radius: 50%;
-    background-color: rgba(177, 222, 238, 0.974);
+    padding: 5px;
 }
 .img img{
     width: 100%;
@@ -117,3 +116,149 @@ nav a{
     font-size: 16px;
     border: none;
 }
+.container3{
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(102, 174, 199),rgb(54, 118, 182));
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+[class ^= "c3"]
+{
+    padding: 20px 10px;
+    width: 28%;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+[class ^= "c3"] .img{
+    width: 25%;
+    padding: 15px;
+    border-radius: 50%;
+    background-color:  rgb(102, 174, 199);
+}
+[class ^= "c3"] .img img {
+    width: 100%;
+}
+[class ^= "c3"] p{
+    text-align: center;
+}
+[class ^= "c3"] button , .C4button{
+    background-color: rgb(102, 174, 199);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    width: fit-content;
+}
+.container4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 80px auto;
+}
+.container4 p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.516)
+}
+.c4{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.c4box1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+    padding:10px;
+}
+.c4box2{
+    width: 50%;
+}
+.container5{
+    width: 100%;
+    display: flex;
+}
+.c5box1{
+    width: 50%;
+}
+.c5box1 iframe{
+    width: 100%;
+}
+.c5box2{
+    width: 50%;
+    background:linear-gradient(to bottom right,  rgb(140, 198, 217),rgb(19, 58, 97));
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.input1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.input2{
+    width: 100%;
+}
+.input1 div
+{
+    width: 45%;
+}
+.input1 [type ="text"]{
+    padding: 10px;
+    width: 100%;
+}
+.input2 textarea{
+    width: 100%;
+    padding: 5px;
+}
+input , textarea{
+    background-color: rgba(124, 163, 195, 0.533);
+    border: none;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+.c5box2 button{
+    background-color: rgba(250, 111, 36, 0.815);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    width: fit-content;
+}
+.footer{
+    margin: 50px 12%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.footer a , .container4 a{
+    text-decoration: none;
+}
+.foot2{
+    display: flex;
+    gap:15px;
+}
+.foot2 a{
+    font-size: 25px;
+}
+.footer p{
+    margin: 0;
+}
+
+
+
+
