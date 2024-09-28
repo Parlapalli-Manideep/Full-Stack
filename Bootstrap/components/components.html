@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        .forCards{
+            width: 100;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card img{
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleAutoplaying " class="carousel slide" data-bs-ride="carousel" style="width:95%; margin: auto;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.kateskitchenkc.com/wp-content/uploads/2023/10/traditional-full-american-breakfast-eggs-pancakes-with-bacon-and-toast.jpg_s1024x1024wisk20cz03ui5Oqyz8Ys_pG0bVWsgoz_v_E5Oct4x-0C-sAjME.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.recipesaresimple.com/wp-content/uploads/2014/08/thalassery-biriyani-x.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/lDGaH-FD7Zk/maxresdefault.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="forCards mt-5" style="width: 100%;">
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Burger</h5>
+              <p class="card-text">Some kind of food to satisfy our hunger.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBUB29g10OU6gbBqkA5XVr5Tu7hogNeoZuRw&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Momos</h5>
+              <p class="card-text">Some kind of food to satisfy our hunger.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.recipetineats.com/tachyon/2022/09/Crispy-Fries_8.jpg?resize=500%2C500" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">French Fries</h5>
+              <p class="card-text">Some kind of food to satisfy our hunger.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkyHS9SNOEdR-88VtefG3xJcFajnAPlJZJWQ&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">Some kind of food to satisfy our hunger.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="accordion mt-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button text-info bg-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              First Common Question
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Second Question Answer
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-body-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Third Question for You
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-body-secondary collapsed bg-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Fourth Question Asked
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-body-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Fifth Ever Question
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the fifth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-body-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Sixth Sense Question
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the Sixth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="d-flex justify-content-around w-100 mt-5">
+        <button type="button " class="btn btn-light">Button one</button>
+        <button type="button" class="btn btn-outline-warning">Button Two</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        click here
+        </button>
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Did you Understood?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Give your response
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+
+      <div class="footer d-flex mt-5 p-5 justify-content-around align-items-center bg-black text-light">
+        <p class="m-0 d-flex align-items-center">Copyright &#169; Art Factory Company .Design : <a href="">TemplateMo</a></p>
+        <div class="foot2 d-flex gap-4 fs-3">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-solid fa-wifi"></i></a>
+          <a href="#"><i class="fa-solid fa-globe"></i></a>
+        </div>
+    </div>
+
+  </body>
+</html>
