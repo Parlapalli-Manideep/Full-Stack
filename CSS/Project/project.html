@@ -14,29 +14,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <div class="banner">
-        <div class="header">
-            <h1>ART FACTORY</h1>
-            <nav>
-                <a href="#" class="home">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">SERVICES</a>
-                <a href="#">FREQUENTLY QUESTIONS</a>
-                <div class="dropdown ">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                        style="color: white;">
-                        DROPDOWN
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" type="button">Action</button></li>
-                        <li><button class="dropdown-item" type="button">Another action</button></li>
-                        <li><button class="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
-                </div>
+        <div class="header navbar navbar-expand-lg bg-body-tertiary container-fluid">
+          <h1 class="navbar-brand">ART FACTORY</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarSupportedContent">
+              <a href="#" class="home">HOME</a>
+              <a href="#" class="nav-link">ABOUT</a>
+              <a href="#" class="nav-link">SERVICES</a>
+              <a href="#" class="nav-link">FREQUENTLY QUESTIONS</a>
+              <div class="dropdown ">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                      style="color: white;">
+                      DROPDOWN
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                  </ul>
+              </div>
 
-                <a href="">CONTACT US</a>
-            </nav>
-        </div>
+              <a href="" class="nav-link ">CONTACT US</a>
+          </nav>
+      </div>
+    <div class="banner">
         <div class="main-banner">
             <div class="banner1">
                 <h1 class="title">Art Factory is free</h1>
@@ -313,7 +316,7 @@
             </div>
             <div class="input2">
                 <textarea rows="6">
-Your Message
+                    Your Message
                 </textarea>
             </div>
             <button>Send It</button>

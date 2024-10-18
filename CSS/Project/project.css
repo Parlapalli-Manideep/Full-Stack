@@ -4,38 +4,39 @@
     box-sizing: border-box;
 }
 .banner{
+    position: relative;
     background-image: url(./assets/banner-bg.png);
     background-size: cover;
+    height: max-content;
     width: 100%;
-    height: 100vh;
 }
 .home{
     color: orange;
+    text-decoration: none;
+}
+.navbar-brand
+{
+    margin-left: 5%;
+    margin-right: 20%;
 }
 .header{
+    position: fixed;
+    width: 100%;
+    background-image: url(./assets/banner-bg.png);
+    z-index: 1;
+    top: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color:white;
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
+    justify-content: space-around;
 }
-nav{
-    align-items: center;
-    display: flex;
-    gap:25px;
-    
-}
-nav a{
-    text-decoration: none;
+ .nav-link
+ {
     color: white;
-}
+ }
 .main-banner{
-    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
+    height: 100vh;
 }
 .banner1 , .banner2{
     width: 50%;
@@ -87,6 +88,10 @@ nav a{
 }
 .c2box2 , .c2box1{
     width: 50%;
+}
+.c2box2 img
+{
+    width: 100%;
 }
 .box1 , .box2 , .box3 {
     display: flex;
@@ -183,7 +188,6 @@ nav a{
     width: 50%;
 }
 .Map-form{
-    width: 100%;
     display: flex;
 }
 .c5box1{
@@ -244,6 +248,7 @@ input , textarea{
     display: flex;
     justify-content: space-between;
     align-content: center;
+    gap: 3%;
 }
 .footer a , .container4 a{
     text-decoration: none;
@@ -267,7 +272,169 @@ input , textarea{
    width: 7px;
    height: 7px;
 }
-
-
-
-
+@media screen and (max-width:424px){
+    .main-banner
+    {
+        flex-direction: column;
+        height:160vh;
+        justify-content: center;
+    }
+    .title , .title2{
+        font-size: 30px; 
+        color: white;
+        font-weight: 300;
+    }
+    .Discover
+    {
+        flex-direction: column;
+    }
+    .c1box1,.c1box2
+    {
+        width: 100%;
+    }
+    .Information
+    {
+        flex-direction: column;
+    }
+    .c2box2 , .c2box1{
+        width: 100%;
+    }
+    .c2box1 .img{
+        width: 100%;
+        height: 50%;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    [class ^= "c3"]
+    {
+        width: 95%;
+    }
+    .container3
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .c4
+    {
+       flex-direction: column;
+       gap:20px;
+       width: 100%;
+    }
+    .c4box1,.c4box2
+    {
+       width: 100%;
+    }
+    .Map-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .c5box1,.c5box2
+    {
+        width: 95%;
+    }
+    .footer
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
+     .foot2
+     {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     }
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    .main-banner
+    {
+        flex-direction: column;
+        height:150vh;
+        justify-content: center;
+    }
+    .title , .title2{
+        font-size: 40px; 
+        color: white;
+        font-weight: 300;
+    }
+    .Discover
+    {
+        flex-direction: column;
+    }
+    .c1box1,.c1box2
+    {
+        width: 100%;
+    }
+    .Information
+    {
+        flex-direction: column;
+    }
+    .c2box2 , .c2box1{
+        width: 100%;
+    }
+    .c2box1 .img{
+        width: 20%;
+        height: 50%;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    [class ^= "c3"]
+    {
+        width: 100%;
+    }
+    .container3
+    {
+        gap: 20px;
+    }
+    .c4
+     {
+        flex-direction: column;
+        gap:20px;
+        width: 100%;
+     }
+     .c4box1,.c4box2
+     {
+        width: 100%;
+     }
+    .Map-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .c5box1,.c5box2
+    {
+        width: 95%;
+    }
+    .footer
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .main-banner
+    {
+        width: 80%;
+        height: 120vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .c2box1 .img{
+        width: 30%;
+        height: 50%;
+        border-radius: 50%;
+        padding: 5px;
+    }
+}
+@media screen and (min-width:1025px){
+    .main-banner
+    {
+        width: 90%;
+    }
+}
