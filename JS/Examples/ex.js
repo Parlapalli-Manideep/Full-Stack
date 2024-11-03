@@ -32,7 +32,7 @@ var b = a.toLowerCase(a)
 var c = a.toUpperCase(a)
 var password = 123456
 var userName = "ADMIN";
-pass = 12356
+pass = 123456
 if(( userName === a || userName === b || userName === c ) && pass ===123456)
 console.log("Login successfull")
 else
