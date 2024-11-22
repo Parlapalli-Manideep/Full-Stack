@@ -21,3 +21,9 @@ aa[10] = "z"
 resultedArray = aa.slice(8,11)
 console.log(resultedArray)
 console.log(resultedArray.length)
+
+let str = "Hello World"
+console.log(str.slice(-5,-1));
+
+str = "hello manideep"
+console.log(str.replace("hello", "hellow"))

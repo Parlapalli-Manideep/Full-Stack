@@ -1,7 +1,7 @@
 var a= ["one ","two","three" ]
 console.log(a.length)
 console.log(a)
-a.push(7 , 'jklsdf') //end of the array
+a.push(7 , 'jklsdf') 
 console.log(a.length)
 console.log(a)
 console.log(a[2].slice(-2))
