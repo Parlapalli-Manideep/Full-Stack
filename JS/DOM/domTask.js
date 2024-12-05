@@ -24,6 +24,4 @@ let x = b[1].getElementsByTagName("img")
 x[0].style.borderRadius="30px"
 x[1].style.borderRadius="100px"
 x[2].style.borderRadius="50%"
-
-
 }
