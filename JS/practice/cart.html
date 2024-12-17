@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cart-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .cart-container h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            padding: 10px;
+            justify-content: space-evenly;
+            border-radius: 8px;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cart-container">
+    </div>
+    <h1>Cart is Empty</h1>
+    <h1></h1>
+    <h1></h1>
+    <script>
+        const heading = document.getElementsByTagName("h1");
+        const cartContainer = document.querySelector(".cart-container");
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems=cartItems.map(x=>({
+            ...x,
+            price:typeof x.price === "string" && x.price.charAt(0) === "$" ? x.price.slice(1) : x.price || 0 
+        }))
+        if (cartItems.length > 0) {
+            heading[0].style.display = "none";
+            // heading[1].style.display = "none";
+            // heading[2].style.display = "none";
+        }
+        function changeCart() {
+            cartContainer.innerHTML = "";
+            if (cartItems.length === 0) {
+                heading.style.display = "block";
+                return;
+            }
+            totalItems = 0
+            totalPrice = 0
+            cartItems.forEach((item, index) => {
+                const card = document.createElement("div");
+                card.className = "card";
+                totalItems += item.count
+                price = item.price * item.count
+                totalPrice += price
+                card.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}">
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
+                    <p>
+                        <button class="dec">-</button>
+                        <span>${item.count}</span>
+                        <button class="inc">+</button>
+                        <p>${price}</p>
+                    </p>
+                   
+                    
+                `;
+                let a = card.getElementsByTagName("img")[0]
+                a.style.width= "100%";
+                a.style.height= "250px";
+                a.style.objectFit= "cover";
+                a.style.borderRadius = "5px";
+                cartContainer.appendChild(card);
+                const decBtn = card.querySelector(".dec");
+                const incBtn = card.querySelector(".inc");
+                const quantitySpan = card.querySelector("span");
+
+                decBtn.addEventListener("click", () => {
+                    if (item.count > 1) {
+                        item.count -= 1;
+                    } else {
+                        cartItems.splice(index, 1);
+                    }
+                    updateCart();
+                });
+
+                incBtn.addEventListener("click", () => {
+                    item.count += 1;
+                    updateCart();
+                });
+            });
+            heading[1].innerHTML=`Total Items = ${totalItems}`
+            heading[2].innerHTML=`Total Items = ${totalPrice}`
+        }
+
+        function updateCart() {
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            changeCart();
+        }
+
+        changeCart();
+    </script>
+</body>
+
+</html>

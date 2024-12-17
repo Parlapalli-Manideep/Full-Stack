@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+}
+h1{
+    font-size: 35px;
+    color: rgb(27, 112, 169);
+}
+p{
+    font-size: 20px;
+}
+input{
+    border: none;
+    text-align: center;
+    font-size: 22px;
+}
+button{
+    font-size: 18px;
+    color: white;
+    padding: 3px 15px;
+    background-color: black;
+    border: none;
+}

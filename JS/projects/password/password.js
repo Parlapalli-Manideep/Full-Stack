@@ -7,7 +7,6 @@ let i =  document.getElementsByTagName("i")[0]
         {
             a.type = "text"
             i.className="fa-solid fa-eye"
-            // <i class="fa-solid fa-eye"></i>
         }
         else
         {

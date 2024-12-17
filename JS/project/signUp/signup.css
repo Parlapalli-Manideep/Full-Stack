@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    background-image: url("https://png.pngtree.com/background/20230617/original/pngtree-illustration-of-cryptocurrency-trading-in-3d-rendering-picture-image_3708194.jpg");
+    background-size: cover;
+}
+ .main-top,.main-bottom{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255 182 0 / 65%);
+    padding: 18px;
+    gap : 8px;
+    border-radius: 15px;
+    width: 35%;
+    padding: 20px 40px;
+    font-size: 18px;
+}
+.main-bottom{
+    text-align: center;
+}
+input{
+    height: 30px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+button{
+    width: fit-content;
+    padding: 3px 8px;
+    align-self: center;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.pswd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 8px;
+    border-radius: 8px;
+}
+i{
+    color: black;
+}
+#heading{
+    text-align: center; 
+    font-size: 32px; 
+    color: rgb(253, 253, 253);
+    font-weight: bold;
+}
+button{
+    padding: 5px 10px;
+}
+button:hover{
+    background-color: white;
+    color: goldenrod;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        gap: 15px;
+    }
+    .main-top,.main-bottom {
+        width: 42%; 
+        padding: 20px 30px; 
+    }
+    input {
+        height: 35px;
+        font-size: 16px; 
+    }
+    button {
+        font-size: 20px;
+        padding: 5px 12px; 
+    }
+    .pswd input{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .main-top,.main-bottom {
+        width: 55%;
+        padding: 30px 50px; 
+    }
+    input {
+        height: 45px;
+        font-size: 20px;
+    }
+    button {
+        font-size: 24px;
+        padding: 10px 20px; 
+    }
+}
+@media screen and (max-width :426px){
+    .main-bottom,.main-top{
+        width: 90%;
+    }
+    .pswd input{
+        width: 160px;
+    }
+}

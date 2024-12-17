@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    margin: auto;
+    width: 250px;
+    gap: 30px;
+    padding: 20px;
+    background-color: lightslategray;
+    box-shadow: 4px 4px 8px black;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+}
+button{
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+#inc{
+    background-color: green;
+}
+#dec{
+    background-color: red;
+}
+#reset{
+    background-color: blue;
+}

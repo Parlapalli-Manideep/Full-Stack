@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap:30px;
+        }
+        .card{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            box-shadow: 2px 2px 4px;
+            padding: 15px 10px;
+        }
+        img{
+            width: 100%;
+            height: 65%;
+            object-fit: cover;
+        }
+        button{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+    </div>
+    <script>
+        allCards = document.getElementsByTagName("div")[0]
+        items = JSON.parse(localStorage.getItem("items")) || []
+        if (items == [])
+            alert("Cart is empty")
+        for (i = 0; i < items.length; i++) {
+            price = items[i].count * items[i].price.slice(1)
+            let card = document.createElement("div")
+            card.className = "card"
+            card.innerHTML = `
+            <img src="${items[i].image}" alt="">
+            <h2>${items[i].title}</h2>
+            <p>${items[i].description}</p>
+            <p><button>-</button> ${items[i].count} <button>+</button></p>
+            <p>$${price}</p>
+            `
+            allCards.append(card)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Details</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-image: url("https://wallpapers.com/images/hd/crypto-bitcoin-with-speed-motion-graphics-9bfrqo5li82lokxf.jpg"); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 700;
+            padding: 30px;
+            gap: 15px;
+            width: 35%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .main img{
+            width: 200px;
+            height:200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .main p{
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        #link{
+            font-weight: 600;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        a{
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #ffa500;
+        }
+
+        @media (max-width: 768px){
+            .main {
+                width: 50%;
+                padding: 20px;
+            }
+            .main p{
+                font-size: 16px;
+            }
+            .main img {
+                width: 100px;
+                height: 100px;
+            }
+            #link {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+        </div>
+    </div>
+
+    <script>
+        const div = document.getElementsByTagName("div")[1];
+        const obj = JSON.parse(sessionStorage.getItem("items"));
+        div.innerHTML = `
+            <img src="${obj.image}" alt="">
+            <p><strong>ID:</strong> ${obj.id}</p>
+            <p><strong>Name:</strong> ${obj.name}</p>
+            <p><strong>Symbol:</strong> ${obj.symbol}</p><br>
+            <p id="link">
+                <a href="${obj.link}" target="_blank">Click here</a> to learn more
+            </p>
+        `;
+    </script>
+</body>
+
+</html>
