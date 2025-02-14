@@ -132,10 +132,4 @@ function search(query) {
 }
 
 getData();
-// // window height
-// const height = window.innerHeight;
 
-// // window width
-// const width = window.innerWidth;
-
-// console.log(height, width); // 711 1440

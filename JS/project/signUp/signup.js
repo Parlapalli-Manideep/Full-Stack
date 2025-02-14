@@ -1,11 +1,18 @@
 inputs = document.getElementsByTagName("input")
-btn = document.getElementsByTagName("button")[0]
+btn = document.getElementsByTagName("button")
 para = document.getElementById("wrongPswd")
 error = document.getElementsByClassName("error")
 const nameError = /^[a-zA-Z]{3,}$/
 const pswdError =/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,14}$/
 const emailError = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.]+\.[a-zA-Z]{2,}/
 isvalidate = false;
+
+btn[1].addEventListener("click", (event) => {
+    sessionStorage.setItem("username","Guest")
+    sessionStorage.setItem("islogin" , true)
+    window.location.href = "./../mainPage/main.html"
+})
+
 function passwordcheck(i, j) {
     check = 0
     if (i == 3) {
@@ -73,7 +80,7 @@ inputs[1].addEventListener("keyup",()=>{
     error[1].textContent = ""
 })
 
-btn.addEventListener("click", (event) => {
+btn[0].addEventListener("click", (event) => {
     event.preventDefault()
     let uName = inputs[0].value.trim()
     let uEmail = inputs[1].value.trim()

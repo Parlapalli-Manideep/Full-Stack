@@ -1,8 +1,14 @@
 i = document.getElementsByTagName("i")[0]
 inputs = document.getElementsByTagName("input")
-btn = document.getElementsByTagName("button")[0]
+btn = document.getElementsByTagName("button")
 error = document.getElementsByClassName("error")[0]
 emailError = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.]+\.[a-zA-Z]{2,}/
+
+btn[1].addEventListener("click", (event) => {
+    sessionStorage.setItem("username","Guest")
+    sessionStorage.setItem("islogin" , true)
+    window.location.href = "./../mainPage/main.html"
+})
 
 i.addEventListener("click", () => {
     if (inputs[1].type === "password") {
@@ -16,7 +22,7 @@ i.addEventListener("click", () => {
 })
 isValidate = true
 
-btn.addEventListener("click", (event) => {
+btn[0].addEventListener("click", (event) => {
     event.preventDefault()
     let uEmail = inputs[0].value.trim()
     let uPswd = inputs[1].value.trim()

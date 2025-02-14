@@ -15,7 +15,7 @@
     background-size: cover;
 }
 .main-top,.main-bottom{
-     background-color: rgb(255 182 0 / 75%);
+     background-color: rgb(255 182 0 / 70%);
      border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -66,11 +66,20 @@ button{
 button:hover{
     background-color: white;
     color: goldenrod;
+    border: none;
 }
 a:hover{
     text-decoration: underline;
 }
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
 @media screen and (max-width: 768px) {
+    .main{
+        background-image: url("https://media.istockphoto.com/id/1440241076/photo/bitcoin-and-ethereum-cryptocurrency-with-candle-stick-graph-chart-laptop-keyboard-and-digital.jpg?s=612x612&w=0&k=20&c=_w_qu1rJdNKYep5AIJU8LgO5UBDLbJhDr71BoBENGus=");
+        background-size: cover;
+    }
     .main-top, .main-bottom {
         width: 40%;
         padding: 20px;
